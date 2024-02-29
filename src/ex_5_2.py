@@ -1,4 +1,4 @@
-""" ex_5_2.py
+""" ex_5_2.p
 This module contains an entry point that
 
 - loads data from a file `ex_5_2-data.csv` into a numpy array
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     root_dir = get_repository_root()
     INFILE = root_dir / "data" / "ex_5_2-data.csv"
     OUTFILE = root_dir / "outputs" / "ex_5_2-processed.csv"
-    data = np..loadtxt(INFILE)
+    data = np.loadtxt(INFILE)
     data_mean = np.mean(data)
     data -= data_mean
     data_std = np.std(data)
